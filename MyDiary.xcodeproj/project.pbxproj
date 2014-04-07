@@ -26,7 +26,7 @@
 		21AC747B18F2E79E0097B55F /* DetailDiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AC747A18F2E79E0097B55F /* DetailDiaryViewController.m */; };
 		21AC748A18F2E8BB0097B55F /* a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21AC748818F2E8BB0097B55F /* a.jpg */; };
 		21AC748B18F2E8BB0097B55F /* b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21AC748918F2E8BB0097B55F /* b.jpg */; };
-		21AC748E18F2EA3B0097B55F /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AC748D18F2EA3B0097B55F /* AboutViewController.m */; };
+		21AC749118F2EB240097B55F /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AC749018F2EB240097B55F /* AboutViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,8 +67,8 @@
 		21AC747A18F2E79E0097B55F /* DetailDiaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailDiaryViewController.m; sourceTree = "<group>"; };
 		21AC748818F2E8BB0097B55F /* a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = a.jpg; sourceTree = "<group>"; };
 		21AC748918F2E8BB0097B55F /* b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = b.jpg; sourceTree = "<group>"; };
-		21AC748C18F2EA330097B55F /* AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AboutViewController.h; path = ../../MyDiary.BAK/MyDiary/AboutViewController.h; sourceTree = "<group>"; };
-		21AC748D18F2EA3B0097B55F /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutViewController.m; path = ../../MyDiary.BAK/MyDiary/AboutViewController.m; sourceTree = "<group>"; };
+		21AC748F18F2EB240097B55F /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutViewController.h; path = ../AboutViewController.h; sourceTree = "<group>"; };
+		21AC749018F2EB240097B55F /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutViewController.m; path = ../AboutViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +128,8 @@
 		21AC744118F2E62B0097B55F /* MyDiary */ = {
 			isa = PBXGroup;
 			children = (
-				21AC748D18F2EA3B0097B55F /* AboutViewController.m */,
-				21AC748C18F2EA330097B55F /* AboutViewController.h */,
+				21AC748F18F2EB240097B55F /* AboutViewController.h */,
+				21AC749018F2EB240097B55F /* AboutViewController.m */,
 				21AC748718F2E8A90097B55F /* resources */,
 				21AC747918F2E79E0097B55F /* DetailDiaryViewController.h */,
 				21AC747A18F2E79E0097B55F /* DetailDiaryViewController.m */,
@@ -289,7 +289,7 @@
 				21AC747B18F2E79E0097B55F /* DetailDiaryViewController.m in Sources */,
 				21AC747818F2E78E0097B55F /* LocationViewController.m in Sources */,
 				21AC744C18F2E62B0097B55F /* AppDelegate.m in Sources */,
-				21AC748E18F2EA3B0097B55F /* AboutViewController.m in Sources */,
+				21AC749118F2EB240097B55F /* AboutViewController.m in Sources */,
 				21AC744818F2E62B0097B55F /* main.m in Sources */,
 				21AC747518F2E77B0097B55F /* DiaryListViewController.m in Sources */,
 				21AC747418F2E77B0097B55F /* Diary.m in Sources */,
