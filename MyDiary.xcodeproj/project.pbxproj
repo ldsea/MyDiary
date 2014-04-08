@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2158B95418F4101D007AE826 /* a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2158B95218F4101D007AE826 /* a.jpg */; };
+		2158B95518F4101D007AE826 /* b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2158B95318F4101D007AE826 /* b.jpg */; };
+		2158B95818F4102A007AE826 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2158B95718F4102A007AE826 /* AboutViewController.m */; };
 		21AC743C18F2E62B0097B55F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21AC743B18F2E62B0097B55F /* Foundation.framework */; };
 		21AC743E18F2E62B0097B55F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21AC743D18F2E62B0097B55F /* CoreGraphics.framework */; };
 		21AC744018F2E62B0097B55F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21AC743F18F2E62B0097B55F /* UIKit.framework */; };
@@ -40,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2158B95218F4101D007AE826 /* a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = a.jpg; path = MyDiary/a.jpg; sourceTree = "<group>"; };
+		2158B95318F4101D007AE826 /* b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = b.jpg; path = MyDiary/b.jpg; sourceTree = "<group>"; };
+		2158B95618F4102A007AE826 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		2158B95718F4102A007AE826 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		21AC743818F2E62B0097B55F /* MyDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21AC743B18F2E62B0097B55F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		21AC743D18F2E62B0097B55F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -128,6 +135,8 @@
 		21AC744118F2E62B0097B55F /* MyDiary */ = {
 			isa = PBXGroup;
 			children = (
+				2158B95618F4102A007AE826 /* AboutViewController.h */,
+				2158B95718F4102A007AE826 /* AboutViewController.m */,
 				21AC748718F2E8A90097B55F /* resources */,
 				21AC747918F2E79E0097B55F /* DetailDiaryViewController.h */,
 				21AC747A18F2E79E0097B55F /* DetailDiaryViewController.m */,
@@ -180,6 +189,8 @@
 		21AC748718F2E8A90097B55F /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				2158B95218F4101D007AE826 /* a.jpg */,
+				2158B95318F4101D007AE826 /* b.jpg */,
 				21AC748818F2E8BB0097B55F /* a.jpg */,
 				21AC748918F2E8BB0097B55F /* b.jpg */,
 			);
@@ -266,8 +277,10 @@
 				21AC745418F2E62B0097B55F /* Images.xcassets in Resources */,
 				21AC748B18F2E8BB0097B55F /* b.jpg in Resources */,
 				21AC748A18F2E8BB0097B55F /* a.jpg in Resources */,
+				2158B95418F4101D007AE826 /* a.jpg in Resources */,
 				21AC744618F2E62B0097B55F /* InfoPlist.strings in Resources */,
 				21AC744F18F2E62B0097B55F /* Main.storyboard in Resources */,
+				2158B95518F4101D007AE826 /* b.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +301,7 @@
 			files = (
 				21AC747B18F2E79E0097B55F /* DetailDiaryViewController.m in Sources */,
 				21AC747818F2E78E0097B55F /* LocationViewController.m in Sources */,
+				2158B95818F4102A007AE826 /* AboutViewController.m in Sources */,
 				21AC744C18F2E62B0097B55F /* AppDelegate.m in Sources */,
 				21AC749118F2EB240097B55F /* AboutViewController.m in Sources */,
 				21AC744818F2E62B0097B55F /* main.m in Sources */,
@@ -497,6 +511,7 @@
 				21AC746C18F2E62B0097B55F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21AC746D18F2E62B0097B55F /* Build configuration list for PBXNativeTarget "MyDiaryTests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +520,7 @@
 				21AC746F18F2E62B0097B55F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
