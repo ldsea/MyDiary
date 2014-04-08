@@ -27,9 +27,6 @@
 		21AC747518F2E77B0097B55F /* DiaryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AC747318F2E77B0097B55F /* DiaryListViewController.m */; };
 		21AC747818F2E78E0097B55F /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AC747718F2E78E0097B55F /* LocationViewController.m */; };
 		21AC747B18F2E79E0097B55F /* DetailDiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AC747A18F2E79E0097B55F /* DetailDiaryViewController.m */; };
-		21AC748A18F2E8BB0097B55F /* a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21AC748818F2E8BB0097B55F /* a.jpg */; };
-		21AC748B18F2E8BB0097B55F /* b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21AC748918F2E8BB0097B55F /* b.jpg */; };
-		21AC749118F2EB240097B55F /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AC749018F2EB240097B55F /* AboutViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,10 +69,6 @@
 		21AC747718F2E78E0097B55F /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
 		21AC747918F2E79E0097B55F /* DetailDiaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailDiaryViewController.h; sourceTree = "<group>"; };
 		21AC747A18F2E79E0097B55F /* DetailDiaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailDiaryViewController.m; sourceTree = "<group>"; };
-		21AC748818F2E8BB0097B55F /* a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = a.jpg; sourceTree = "<group>"; };
-		21AC748918F2E8BB0097B55F /* b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = b.jpg; sourceTree = "<group>"; };
-		21AC748F18F2EB240097B55F /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutViewController.h; path = ../AboutViewController.h; sourceTree = "<group>"; };
-		21AC749018F2EB240097B55F /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutViewController.m; path = ../AboutViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,8 +141,6 @@
 				21AC747318F2E77B0097B55F /* DiaryListViewController.m */,
 				21AC744A18F2E62B0097B55F /* AppDelegate.h */,
 				21AC744B18F2E62B0097B55F /* AppDelegate.m */,
-				21AC748F18F2EB240097B55F /* AboutViewController.h */,
-				21AC749018F2EB240097B55F /* AboutViewController.m */,
 				21AC744D18F2E62B0097B55F /* Main.storyboard */,
 				21AC745318F2E62B0097B55F /* Images.xcassets */,
 				21AC744218F2E62B0097B55F /* Supporting Files */,
@@ -191,8 +182,6 @@
 			children = (
 				2158B95218F4101D007AE826 /* a.jpg */,
 				2158B95318F4101D007AE826 /* b.jpg */,
-				21AC748818F2E8BB0097B55F /* a.jpg */,
-				21AC748918F2E8BB0097B55F /* b.jpg */,
 			);
 			name = resources;
 			path = ..;
@@ -275,8 +264,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				21AC745418F2E62B0097B55F /* Images.xcassets in Resources */,
-				21AC748B18F2E8BB0097B55F /* b.jpg in Resources */,
-				21AC748A18F2E8BB0097B55F /* a.jpg in Resources */,
 				2158B95418F4101D007AE826 /* a.jpg in Resources */,
 				21AC744618F2E62B0097B55F /* InfoPlist.strings in Resources */,
 				21AC744F18F2E62B0097B55F /* Main.storyboard in Resources */,
@@ -303,7 +290,6 @@
 				21AC747818F2E78E0097B55F /* LocationViewController.m in Sources */,
 				2158B95818F4102A007AE826 /* AboutViewController.m in Sources */,
 				21AC744C18F2E62B0097B55F /* AppDelegate.m in Sources */,
-				21AC749118F2EB240097B55F /* AboutViewController.m in Sources */,
 				21AC744818F2E62B0097B55F /* main.m in Sources */,
 				21AC747518F2E77B0097B55F /* DiaryListViewController.m in Sources */,
 				21AC747418F2E77B0097B55F /* Diary.m in Sources */,
