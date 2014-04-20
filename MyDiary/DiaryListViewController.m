@@ -7,6 +7,7 @@
 //
 
 #import "DiaryListViewController.h"
+#import "DetailDiaryViewController.h"
 #import "Diary.h"
 
 @interface DiaryListViewController ()
@@ -37,21 +38,21 @@
      _diaries = [[NSMutableArray alloc]init];
     
     for (int i=0; i<10; i++) {
-        Diary *diary  = [[Diary alloc]initWithTitle:[NSString stringWithFormat:@"日志%d",i] content:[NSString stringWithFormat:@"内容%d",i]];
+        Diary *diary  = [[Diary alloc]initWithTitle:[NSString stringWithFormat:@"日志%d",i] content:[NSString stringWithFormat:@"第%d日志的内容是《%d》",i,i]];
         
        
         
         [_diaries addObject:diary];
     }
-    //创建一个新的bar button item,用户点击按钮的时候会调用addNewDiary
-    UIBarButtonItem *bbi = [[UIBarButtonItem alloc]
-                            initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNewDiary:)];
-    
-    [[self navigationItem] setRightBarButtonItem:bbi];
+//    //创建一个新的bar button item,用户点击按钮的时候会调用addNewDiary
+//    UIBarButtonItem *bbi = [[UIBarButtonItem alloc]
+//                            initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNewDiary:)];
+//    
+//    [[self navigationItem] setRightBarButtonItem:bbi];
     
     [[self navigationItem]setLeftBarButtonItem:[self editButtonItem]];
     
-    [[self navigationItem] setTitle:@"日记列表"];
+//    [[self navigationItem] setTitle:@"日记列表"];
     
 }
 
@@ -142,6 +143,20 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     NSLog(@"准备开始场景切换");
+    
+    NSString *str = segue.identifier;
+    //获取选择的行
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    int row = [indexPath row];
+    
+    //获取数组中选中行的Diary对象
+    Diary *diary = [self.diaries objectAtIndex:row];
+    
+    //通过segue获取被故事板初始化的对象，然后将数据传递给它
+    DetailDiaryViewController *detailDiaryViewController =
+    (DetailDiaryViewController *)[segue destinationViewController];
+    detailDiaryViewController.diary = diary;
+    
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -150,9 +165,9 @@
 }
 
 
-- (void)addNewDiary:(id)sender
-{
-    
-}
+//- (void)addNewDiary:(id)sender
+//{
+//    
+//}
 
 @end
