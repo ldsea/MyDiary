@@ -11,6 +11,6 @@
 
 @interface LocationViewController : UIViewController <CLLocationManagerDelegate>
 
-@property (nonatomic,strong) CLLocationManager *locationManager;
+@property (nonatomic,strong) CLLocationManager *locationManager; 
 
 @end
