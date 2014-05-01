@@ -144,18 +144,27 @@
     // Pass the selected object to the new view controller.
     NSLog(@"准备开始场景切换");
     
-    NSString *str = segue.identifier;
-    //获取选择的行
-    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-    int row = [indexPath row];
-    
-    //获取数组中选中行的Diary对象
-    Diary *diary = [self.diaries objectAtIndex:row];
-    
-    //通过segue获取被故事板初始化的对象，然后将数据传递给它
-    DetailDiaryViewController *detailDiaryViewController =
-    (DetailDiaryViewController *)[segue destinationViewController];
-    detailDiaryViewController.diary = diary;
+    NSString *str = segue.identifier;//DetailDiary AddDiary
+    if ([str isEqualToString:@"DetailDiary"]) {
+        //获取选择的行
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        int row = [indexPath row];
+        
+        //获取数组中选中行的Diary对象
+        Diary *diary = [self.diaries objectAtIndex:row];
+        
+        //通过segue获取被故事板初始化的对象，然后将数据传递给它
+        DetailDiaryViewController *detailDiaryViewController =
+        (DetailDiaryViewController *)[segue destinationViewController];
+        detailDiaryViewController.diary = diary;
+    }
+    else if([str isEqualToString:@"AddDiary"]){
+        //NSLog(@"创建日志");
+        //实现代理
+        CreateDiaryViewController *createDiaryViewController = (CreateDiaryViewController *)[segue destinationViewController];
+        createDiaryViewController.delegate=self;
+    }
+
     
 }
 
@@ -164,6 +173,17 @@
     NSLog(@"选择了%d行",indexPath.row);
 }
 
+
+//用户点击按钮时实现的方法
+- (void)createDiaryViewControllerDidCancel:(CreateDiaryViewController *)createDiaryController
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+//当用户点击保存按钮时实现的方法
+-(void)createDiaryViewController:(CreateDiaryViewController *)createDiaryController didSaveWithDiary:(Diary *)theDiary
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 //- (void)addNewDiary:(id)sender
 //{

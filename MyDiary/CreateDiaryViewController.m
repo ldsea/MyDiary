@@ -46,4 +46,12 @@
 }
 */
 
+- (IBAction)cancel:(id)sender {
+   // [self dismissViewControllerAnimated:YES completion:nil];
+    [self.delegate createDiaryViewControllerDidCancel:self];
+}
+
+- (IBAction)saveDiary:(id)sender {
+    [self.delegate createDiaryViewController:self didSaveWithDiary:nil];
+}
 @end

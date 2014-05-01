@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" initialViewController="vop-Rd-nKv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" initialViewController="vop-Rd-nKv">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
@@ -10,30 +10,23 @@
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="AboutViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Gcb-lK-h93"/>
-                        <viewControllerLayoutGuide type="bottom" id="740-7b-i0c"/>
+                        <viewControllerLayoutGuide type="top" id="IGu-mA-R46"/>
+                        <viewControllerLayoutGuide type="bottom" id="yeW-si-hBN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyDiary程序作者简介" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oi2-gu-m62">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MyDiary程序作者简介" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oi2-gu-m62">
                                 <rect key="frame" x="43" y="50" width="234" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="234" id="1e0-TX-ET8"/>
-                                    <constraint firstAttribute="height" constant="38" id="Hra-IL-cjb"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="EHM-yG-Ljc">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="EHM-yG-Ljc">
                                 <rect key="frame" x="82" y="104" width="142" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="142" id="ZF5-m0-rHl"/>
-                                </constraints>
                                 <segments>
                                     <segment title="梁栋"/>
                                     <segment title="唐文静"/>
@@ -42,36 +35,19 @@
                                     <action selector="authorChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Lxh-Ua-gzV"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微博:@海蓝" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C4f-W6-ABb">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="微博:@海蓝" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C4f-W6-ABb">
                                 <rect key="frame" x="74" y="164" width="182" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="182" id="h05-ne-X6a"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="wzS-Ap-L9k">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="a.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="wzS-Ap-L9k">
                                 <rect key="frame" x="41" y="195" width="238" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" label="图片"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="238" id="RZq-Bc-WSw"/>
-                                    <constraint firstAttribute="height" constant="112" id="Spk-sd-zmA"/>
-                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="EHM-yG-Ljc" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="82" id="1Vw-Qa-l9R"/>
-                            <constraint firstItem="oi2-gu-m62" firstAttribute="centerX" secondItem="wzS-Ap-L9k" secondAttribute="centerX" id="7fb-v5-vbZ"/>
-                            <constraint firstAttribute="bottom" secondItem="wzS-Ap-L9k" secondAttribute="bottom" constant="104" id="bhn-s6-IgD"/>
-                            <constraint firstItem="oi2-gu-m62" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="hEK-Kl-7x2"/>
-                            <constraint firstItem="C4f-W6-ABb" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="164" id="hzu-IB-7OU"/>
-                            <constraint firstItem="oi2-gu-m62" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="50" id="idT-3q-bAW"/>
-                            <constraint firstItem="C4f-W6-ABb" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="74" id="pcn-y8-RaN"/>
-                            <constraint firstItem="EHM-yG-Ljc" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="104" id="ySb-jB-Wey"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="关于作者" id="udU-xh-MIu"/>
                     <connections>
@@ -89,8 +65,8 @@
             <objects>
                 <viewController id="M8g-uX-V0f" customClass="DetailDiaryViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="FwI-S4-ayJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="ROM-mP-sTT"/>
+                        <viewControllerLayoutGuide type="top" id="KV2-CR-Rt8"/>
+                        <viewControllerLayoutGuide type="bottom" id="NlW-7V-ilS"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bTu-qM-ode">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
@@ -163,9 +139,9 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="我的日记" id="4Z4-lH-pbt"/>
                     <navigationItem key="navigationItem" id="D0h-MQ-E53">
-                        <barButtonItem key="rightBarButtonItem" title="aaa" id="KhQ-oy-362">
+                        <barButtonItem key="rightBarButtonItem" title="添加" id="KhQ-oy-362">
                             <connections>
-                                <segue destination="pyO-HK-ynw" kind="modal" identifier="AddDiary" id="ELU-vS-zEa"/>
+                                <segue destination="pyO-HK-ynw" kind="modal" identifier="AddDiary" modalTransitionStyle="coverVertical" id="ELU-vS-zEa"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -179,32 +155,69 @@
             <objects>
                 <viewController id="pyO-HK-ynw" customClass="CreateDiaryViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="1i1-iD-2I9"/>
-                        <viewControllerLayoutGuide type="bottom" id="W2x-FU-65f"/>
+                        <viewControllerLayoutGuide type="top" id="hnI-an-amO"/>
+                        <viewControllerLayoutGuide type="bottom" id="T9c-xh-uyZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ygq-od-LzD">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="758-Ja-7ow">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="758-Ja-7ow">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="返回" id="I8Y-DZ-rwr" userLabel="f"/>
+                                    <barButtonItem title="返回" id="I8Y-DZ-rwr" userLabel="f">
+                                        <connections>
+                                            <action selector="cancel:" destination="pyO-HK-ynw" id="VHQ-U9-3v3"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="mMk-s8-y3v"/>
                                     <barButtonItem systemItem="camera" id="LEs-iN-fc6"/>
                                     <barButtonItem title="录音" id="ijR-zc-JFD"/>
                                     <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="W9R-k7-brv"/>
-                                    <barButtonItem title="保存" id="CWX-vZ-PkL"/>
+                                    <barButtonItem title="保存" id="CWX-vZ-PkL">
+                                        <connections>
+                                            <action selector="saveDiary:" destination="pyO-HK-ynw" id="qtj-1t-4M8"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="日期和时间" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5k-lJ-9zQ">
+                                <rect key="frame" x="20" y="57" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="日记标题" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XO4-Xk-Cec">
+                                <rect key="frame" x="20" y="86" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="olj-I7-xXf">
+                                <rect key="frame" x="20" y="124" width="280" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.82871610377685956" green="0.67834375281439518" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="758-Ja-7ow" secondAttribute="centerY" constant="208" id="Zxs-iR-0w6"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="diaryContent" destination="olj-I7-xXf" id="jlb-uk-pes"/>
+                        <outlet property="diaryTitle" destination="XO4-Xk-Cec" id="zuU-vK-bSf"/>
+                        <outlet property="diayDate" destination="p5k-lJ-9zQ" id="Pv8-he-KRY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xG3-Co-qkj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3815" y="-1905"/>
+            <point key="canvasLocation" x="-3931" y="-1979"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yzx-Cd-2XQ">
@@ -231,8 +244,8 @@
             <objects>
                 <viewController id="Yfu-Nn-Wdx" customClass="LocationViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="47h-mh-7Ok"/>
-                        <viewControllerLayoutGuide type="bottom" id="Czw-kx-CNp"/>
+                        <viewControllerLayoutGuide type="top" id="Nze-Ff-wxl"/>
+                        <viewControllerLayoutGuide type="bottom" id="wyj-9k-kVq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xRh-rk-Ixb">
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
