@@ -20,7 +20,7 @@
 
 @end
 
-@interface CreateDiaryViewController : UIViewController
+@interface CreateDiaryViewController : UIViewController<UITextFieldDelegate>
 
 @property (weak,nonatomic) id <CreateDiaryViewControllerDelegate> delegate;
 
@@ -29,5 +29,7 @@
 @property (weak, nonatomic) IBOutlet UITextView *diaryContent;
 - (IBAction)cancel:(id)sender;
 - (IBAction)saveDiary:(id)sender;
+
+@property (strong,nonatomic)Diary *diary;
 
 @end

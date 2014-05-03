@@ -171,10 +171,10 @@
                                             <action selector="cancel:" destination="pyO-HK-ynw" id="VHQ-U9-3v3"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="mMk-s8-y3v"/>
+                                    <barButtonItem width="49" style="plain" systemItem="fixedSpace" id="mMk-s8-y3v"/>
                                     <barButtonItem systemItem="camera" id="LEs-iN-fc6"/>
                                     <barButtonItem title="录音" id="ijR-zc-JFD"/>
-                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="W9R-k7-brv"/>
+                                    <barButtonItem width="59" style="plain" systemItem="fixedSpace" id="W9R-k7-brv"/>
                                     <barButtonItem title="保存" id="CWX-vZ-PkL">
                                         <connections>
                                             <action selector="saveDiary:" destination="pyO-HK-ynw" id="qtj-1t-4M8"/>
@@ -193,7 +193,10 @@
                                 <rect key="frame" x="20" y="86" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="pyO-HK-ynw" id="CIN-12-Ay3"/>
+                                </connections>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="olj-I7-xXf">
                                 <rect key="frame" x="20" y="124" width="280" height="128"/>
