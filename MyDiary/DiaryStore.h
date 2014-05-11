@@ -21,4 +21,6 @@
 
 - (Diary *)createDiary;
 
+- (NSString *)diaryArchivePath;
+
 @end

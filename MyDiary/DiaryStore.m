@@ -37,4 +37,19 @@ static DiaryStore *defaultStore = nil;
     return  self;
 }
 
+- (NSArray *) diaries;
+
+{
+    return diaries;
+}
+
+- (Diary *)createDiary
+{
+    Diary *diary = [Diary createDiary];
+    
+    [diaries addObject:diary];
+    
+    return diary;
+}
+
 @end
