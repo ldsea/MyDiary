@@ -11,6 +11,7 @@
 		2158B95418F4101D007AE826 /* a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2158B95218F4101D007AE826 /* a.jpg */; };
 		2158B95518F4101D007AE826 /* b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2158B95318F4101D007AE826 /* b.jpg */; };
 		2158B95818F4102A007AE826 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2158B95718F4102A007AE826 /* AboutViewController.m */; };
+		21863751191F880500370060 /* DiaryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 21863750191F880500370060 /* DiaryStore.m */; };
 		21AC743C18F2E62B0097B55F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21AC743B18F2E62B0097B55F /* Foundation.framework */; };
 		21AC743E18F2E62B0097B55F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21AC743D18F2E62B0097B55F /* CoreGraphics.framework */; };
 		21AC744018F2E62B0097B55F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21AC743F18F2E62B0097B55F /* UIKit.framework */; };
@@ -47,6 +48,8 @@
 		2158B95318F4101D007AE826 /* b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = b.jpg; path = MyDiary/b.jpg; sourceTree = "<group>"; };
 		2158B95618F4102A007AE826 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		2158B95718F4102A007AE826 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		2186374F191F880500370060 /* DiaryStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryStore.h; sourceTree = "<group>"; };
+		21863750191F880500370060 /* DiaryStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryStore.m; sourceTree = "<group>"; };
 		21AC743818F2E62B0097B55F /* MyDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21AC743B18F2E62B0097B55F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		21AC743D18F2E62B0097B55F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -149,6 +152,8 @@
 				21AC744218F2E62B0097B55F /* Supporting Files */,
 				214F94171903C929001C2DC8 /* CreateDiaryViewController.h */,
 				214F94181903C929001C2DC8 /* CreateDiaryViewController.m */,
+				2186374F191F880500370060 /* DiaryStore.h */,
+				21863750191F880500370060 /* DiaryStore.m */,
 			);
 			path = MyDiary;
 			sourceTree = "<group>";
@@ -295,6 +300,7 @@
 				21AC747818F2E78E0097B55F /* LocationViewController.m in Sources */,
 				214F94191903C929001C2DC8 /* CreateDiaryViewController.m in Sources */,
 				2158B95818F4102A007AE826 /* AboutViewController.m in Sources */,
+				21863751191F880500370060 /* DiaryStore.m in Sources */,
 				21AC744C18F2E62B0097B55F /* AppDelegate.m in Sources */,
 				21AC744818F2E62B0097B55F /* main.m in Sources */,
 				21AC747518F2E77B0097B55F /* DiaryListViewController.m in Sources */,
