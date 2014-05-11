@@ -182,7 +182,12 @@
 //当用户点击保存按钮时实现的方法
 -(void)createDiaryViewController:(CreateDiaryViewController *)createDiaryController didSaveWithDiary:(Diary *)theDiary
 {
+    
+    Diary *diary = theDiary;
+    NSLog(@"title:%@, content:%@",diary.title, diary.content);
     [self dismissViewControllerAnimated:YES completion:nil];
+    [self.diaries addObject:diary];
+    [self.tableView reloadData];
 }
 
 //- (void)addNewDiary:(id)sender
