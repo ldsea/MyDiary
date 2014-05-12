@@ -14,6 +14,9 @@
 //    return [self initWithTitle:@"" content:@""];
 //}
 
+
+/*测试同步*/
+
 + (id)createDiary
 {
     Diary *newDiary = [[Diary alloc]init];
