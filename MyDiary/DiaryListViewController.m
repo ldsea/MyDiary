@@ -148,7 +148,7 @@
     if ([str isEqualToString:@"DetailDiary"]) {
         //获取选择的行
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        int row = [indexPath row];
+        NSInteger row = [indexPath row];
         
         //获取数组中选中行的Diary对象
         Diary *diary = [self.diaries objectAtIndex:row];
