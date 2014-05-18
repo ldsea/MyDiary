@@ -23,4 +23,9 @@
 
 - (NSString *)diaryArchivePath;
 
+-(BOOL)saveChanges;
+
+-(void)fetchDiary;
+
+
 @end

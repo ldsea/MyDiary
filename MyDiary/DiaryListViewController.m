@@ -9,6 +9,7 @@
 #import "DiaryListViewController.h"
 #import "DetailDiaryViewController.h"
 #import "Diary.h"
+#import "DiaryStore.h"
 
 @interface DiaryListViewController ()
 
@@ -25,6 +26,13 @@
     return self;
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    self.diaries = (NSMutableArray *)[[DiaryStore defaultStore]diaries];
+    
+    [super viewWillAppear:animated];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -35,23 +43,23 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-     _diaries = [[NSMutableArray alloc]init];
-    
-    for (int i=0; i<10; i++) {
-        Diary *diary  = [[Diary alloc]initWithTitle:[NSString stringWithFormat:@"日志%d",i] content:[NSString stringWithFormat:@"第%d日志的内容是《%d》",i,i]];
-        
-       
-        
-        [_diaries addObject:diary];
-    }
+//     _diaries = [[NSMutableArray alloc]init];
+//    
+//    for (int i=0; i<10; i++) {
+//        Diary *diary  = [[Diary alloc]initWithTitle:[NSString stringWithFormat:@"日志%d",i] content:[NSString stringWithFormat:@"第%d日志的内容是《%d》",i,i]];
+//        
+//       
+//        
+//        [_diaries addObject:diary];
+//    }
 //    //创建一个新的bar button item,用户点击按钮的时候会调用addNewDiary
 //    UIBarButtonItem *bbi = [[UIBarButtonItem alloc]
 //                            initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNewDiary:)];
 //    
 //    [[self navigationItem] setRightBarButtonItem:bbi];
     
-    [[self navigationItem]setLeftBarButtonItem:[self editButtonItem]];
-    
+//    [[self navigationItem]setLeftBarButtonItem:[self editButtonItem]];
+//    
 //    [[self navigationItem] setTitle:@"日记列表"];
     
 }

@@ -39,4 +39,27 @@
     return self;
 }
 
+-(void)encodeWithCoder:(NSCoder *)aCoder
+{
+    //对于每一个实例变量，基于它的变量名进行归档
+    //并且这些对象也会被用于发送encodeWithCoder:消息
+    [aCoder encodeObject:self.title forKey:@"title"];
+        [aCoder encodeObject:self.content forKey:@"content"];
+        [aCoder encodeObject:self.dateCreate forKey:@"dateCreate"];
+       // [aCoder encodeObject:self. forKey:@"title"];
+}
+
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super init];
+    if(self){
+        [self setTitle:[aDecoder decodeObjectForKey:@"title"]];
+        [self setContent:[aDecoder decodeObjectForKey:@"content"]];
+        
+        _dateCreate = [aDecoder decodeObjectForKey:@"dateCreate"];
+    }
+    
+    return self;
+}
+
 @end
